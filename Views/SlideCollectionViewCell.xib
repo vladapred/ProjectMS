@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SlideCollectionViewCell" customModule="ProjectMS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="773"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="773"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iX-xf-c0G">
+                        <rect key="frame" x="0.0" y="0.0" width="397" height="773"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="uPr-WS-8Cx">
+                                <rect key="frame" x="0.0" y="0.0" width="397" height="773"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-hP-Sk1">
+                                <rect key="frame" x="119.5" y="150" width="158" height="66"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш помощник в поиске лучших фотографий! " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeW-f6-etu">
+                                <rect key="frame" x="40" y="231" width="217" height="45"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPk-mh-eaj">
+                                <rect key="frame" x="166" y="662" width="65" height="31"/>
+                                <color key="tintColor" red="0.71810687755801017" green="0.37657696562996262" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Войти"/>
+                                <connections>
+                                    <action selector="authBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ENs-85-2WG"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mU9-En-DUO">
+                                <rect key="frame" x="30" y="609" width="337" height="45"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="E4E-r2-ZQl"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Регистрация"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="regBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="a2a-yb-frv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BeW-f6-etu" secondAttribute="trailing" constant="140" id="1fD-a6-RXJ"/>
+                            <constraint firstItem="BeW-f6-etu" firstAttribute="top" secondItem="8hH-hP-Sk1" secondAttribute="bottom" constant="15" id="2MK-cQ-TbM"/>
+                            <constraint firstItem="BeW-f6-etu" firstAttribute="leading" secondItem="1iX-xf-c0G" secondAttribute="leading" constant="40" id="38P-RX-0G4"/>
+                            <constraint firstItem="jPk-mh-eaj" firstAttribute="centerX" secondItem="1iX-xf-c0G" secondAttribute="centerX" id="99p-9T-Vxb"/>
+                            <constraint firstItem="mU9-En-DUO" firstAttribute="leading" secondItem="1iX-xf-c0G" secondAttribute="leading" constant="30" id="DMy-4y-pfy"/>
+                            <constraint firstAttribute="trailing" secondItem="uPr-WS-8Cx" secondAttribute="trailing" id="LOM-uf-iZ5"/>
+                            <constraint firstItem="8hH-hP-Sk1" firstAttribute="top" secondItem="1iX-xf-c0G" secondAttribute="top" constant="150" id="asl-gU-rf1"/>
+                            <constraint firstAttribute="bottom" secondItem="jPk-mh-eaj" secondAttribute="bottom" constant="80" id="h4R-HS-nRW"/>
+                            <constraint firstItem="jPk-mh-eaj" firstAttribute="top" secondItem="mU9-En-DUO" secondAttribute="bottom" constant="8" id="k3U-W5-t34"/>
+                            <constraint firstItem="mU9-En-DUO" firstAttribute="centerX" secondItem="1iX-xf-c0G" secondAttribute="centerX" id="kLi-cQ-FgW"/>
+                            <constraint firstAttribute="bottom" secondItem="uPr-WS-8Cx" secondAttribute="bottom" id="q1M-Ky-xa9"/>
+                            <constraint firstItem="uPr-WS-8Cx" firstAttribute="top" secondItem="1iX-xf-c0G" secondAttribute="top" id="rFk-t7-2A5"/>
+                            <constraint firstItem="uPr-WS-8Cx" firstAttribute="leading" secondItem="1iX-xf-c0G" secondAttribute="leading" id="t5J-Pv-Iam"/>
+                            <constraint firstAttribute="trailing" secondItem="mU9-En-DUO" secondAttribute="trailing" constant="30" id="wfX-i0-z0g"/>
+                            <constraint firstItem="8hH-hP-Sk1" firstAttribute="centerX" secondItem="1iX-xf-c0G" secondAttribute="centerX" id="zlT-Ag-NwL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="1iX-xf-c0G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="B5l-rB-Fgy"/>
+                <constraint firstItem="1iX-xf-c0G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WFL-Zm-3Wg"/>
+                <constraint firstAttribute="bottom" secondItem="1iX-xf-c0G" secondAttribute="bottom" id="dLz-lx-4TL"/>
+                <constraint firstAttribute="trailing" secondItem="1iX-xf-c0G" secondAttribute="trailing" id="oL6-vj-bas"/>
+            </constraints>
+            <size key="customSize" width="397" height="773"/>
+            <connections>
+                <outlet property="authBtn" destination="jPk-mh-eaj" id="b4d-dv-U5C"/>
+                <outlet property="descriptionText" destination="BeW-f6-etu" id="Mi0-c8-uVx"/>
+                <outlet property="regBtn" destination="mU9-En-DUO" id="CdI-r1-QQj"/>
+                <outlet property="slideImg" destination="uPr-WS-8Cx" id="hKn-Fy-JTo"/>
+            </connections>
+            <point key="canvasLocation" x="383.33333333333337" y="240.06696428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img1" width="2000" height="3000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
